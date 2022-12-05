@@ -82,6 +82,15 @@ footer .attribution a {
   color: white;
 }
 
+.social-media {
+  margin-top: 30px;
+  position: relative;
+  right: 0;
+}
+.social-media > * {
+  margin: 10px;
+  cursor: pointer;
+}
 @media (min-width: 480px) {
   body {
     min-height: 100vh;
@@ -108,10 +117,15 @@ footer .attribution a {
   }
   .container .content-text {
     display: flex;
-    align-items: left !important;
+    align-items: flex-start;
   }
 
   .container .content-text .text-wrap h1 {
     font-size: 2.4rem;
+  }
+  .social-media {
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
   }
 }
