@@ -86,13 +86,17 @@ footer .attribution a {
   margin-top: 30px;
   position: relative;
   right: 0;
+  display: flex;
+  justify-content: center;
 }
 .social-media > * {
   margin: 10px;
   cursor: pointer;
+  color: white;
 }
 footer {
   margin-top: 30px;
+  margin-left: 30px;
 }
 @media (min-width: 700px) {
   body {
