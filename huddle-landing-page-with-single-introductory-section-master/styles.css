@@ -91,7 +91,10 @@ footer .attribution a {
   margin: 10px;
   cursor: pointer;
 }
-@media (min-width: 480px) {
+footer {
+  margin-top: 30px;
+}
+@media (min-width: 700px) {
   body {
     min-height: 100vh;
     background-image: url("./images/bg-desktop.svg");
@@ -104,6 +107,8 @@ footer .attribution a {
     grid-template-columns: 5fr 4fr;
     text-align: left;
     margin-top: 0px;
+    position: relative;
+    height: min-content;
   }
 
   .container .content-img {
@@ -118,14 +123,17 @@ footer .attribution a {
   .container .content-text {
     display: flex;
     align-items: flex-start;
+    height: max-content;
   }
 
   .container .content-text .text-wrap h1 {
     font-size: 2.4rem;
   }
+  .container .content-text .text-wrap p {
+    font-size: 1rem;
+  }
   .social-media {
-    position: absolute;
-    right: 100px;
-    bottom: 20px;
+    margin-top: 40%;
+    align-self: flex-end;
   }
 }
