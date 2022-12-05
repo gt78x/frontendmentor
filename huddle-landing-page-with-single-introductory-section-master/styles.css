@@ -72,7 +72,7 @@ body {
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 footer .attribution {
@@ -108,7 +108,7 @@ footer {
     text-align: left;
     margin-top: 0px;
     position: relative;
-    height: min-content;
+    min-height: min-content;
   }
 
   .container .content-img {
@@ -133,7 +133,10 @@ footer {
     font-size: 1rem;
   }
   .social-media {
-    margin-top: 40%;
-    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    right: 100px;
+    color: white;
   }
 }
