@@ -127,6 +127,8 @@ p {
 }
 .item-creator .creator-img img {
   width: 100%;
+  outline: 1px solid white;
+  border-radius: 50%;
 }
 
 .item-creator p span:hover {
