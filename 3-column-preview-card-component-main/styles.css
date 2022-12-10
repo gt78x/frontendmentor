@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  margin: 10vh 0;
+}
+
+.item {
+  height: 28rem;
+  color: white;
+  padding: 25px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 1.5;
+}
+
+.item img {
+  width: 4rem;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3rem;
+}
+
+.item:first-child {
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  background: hsl(31, 77%, 52%);
+}
+.item:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.item:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
+
+.item .btn {
+  background-color: white;
+  width: max-content;
+  padding: 1rem 2rem;
+  border-radius: 20rem;
+  text-decoration: none;
+  transition: 0.15s;
+}
+.item .btn:hover {
+  background-color: hsl(0, 0%, 95%);
+}
+.item:first-child .btn {
+  color: hsl(31, 77%, 52%);
+}
+.item:nth-child(2) .btn {
+  color: hsl(184, 100%, 22%);
+}
+.item:nth-child(3) .btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.item:first-child .btn:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+.item:nth-child(2) .btn:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+.item:nth-child(3) .btn:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+.item .btn:hover {
+  color: white;
+  outline: 2px solid white;
+}
+
+@media (min-width: 480px) {
+  .container {
+    display: flex;
+    width: 50rem;
+  }
+
+  .item {
+    height: 28rem;
+    line-height: 2;
+    width: 100rem;
+    transition: 0.15s;
+  }
+  .item:hover {
+    scale: 1.02;
+  }
+
+  .item:first-child {
+    border-radius: 0;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+  }
+
+  .item:nth-child(3) {
+    border-radius: 0;
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+  }
+  .item .btn {
+    background-color: white;
+    width: max-content;
+    padding: 0.6rem 2rem;
+    border-radius: 20rem;
+    text-decoration: none;
+  }
+}
+
+.attribution {
+  text-align: center;
+  font-size: 12px;
+}
+.attribution a {
+  color: purple;
+  text-decoration: none;
+}
