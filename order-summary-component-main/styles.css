@@ -19,13 +19,17 @@ body {
   font-family: "Red Hat Display", sans-serif;
   min-height: 100vh;
   background-color: var(--pale-blue);
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
 }
 
 .order-container {
   max-width: 28rem;
-  min-height: 42rem;
+  min-height: 44rem;
   margin: 10vh auto;
-  background-color: var(--very-pale-blue);
+  background-color: white;
   border-radius: 1.3rem;
   overflow: hidden;
   text-align: center;
@@ -53,13 +57,17 @@ h2 {
 
 .order-wrapper p {
   color: var(--desaturated-blue);
+  line-height: 1.5;
 }
 
 .order-container .plan {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
-  margin: 3rem auto;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--very-pale-blue);
 }
 .order-container .plan img {
   width: 3rem;
@@ -104,4 +112,13 @@ h2 {
 .attribution {
   margin-top: 10vh;
   text-align: center;
+}
+
+@media (min-width: 31.25rem) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+  }
 }
