@@ -11,15 +11,17 @@
 
 body {
   font-family: "Karla", sans-serif;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: var(--light-gray);
 }
 main {
-  margin-top: 10vh;
-  display: flex;
+  min-height: 100vh;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
+  place-items: center;
 }
 .container {
   width: 80%;
@@ -48,6 +50,7 @@ h3 {
   font-size: 1.1rem;
 }
 
+h1,
 h2,
 p,
 a,
@@ -63,16 +66,17 @@ ul {
   flex-direction: column;
 }
 
-.join-community h2 {
+.join-community h1 {
   color: rgb(0, 178, 178);
 }
 
-.join-community h3 {
+.join-community h2 {
   color: rgb(165, 219, 2);
 }
 
 .join-community p {
   line-height: 1.7;
+  color: var(--grayish-blue);
 }
 
 .monthly-subscribtion {
