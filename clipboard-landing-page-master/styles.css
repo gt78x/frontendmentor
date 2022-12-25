@@ -1,0 +1,199 @@
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+
+  --font-size: 1.125rem;
+  --weight-medium: 400;
+  --weight-bold: 600;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  background-image: url("./images/bg-header-mobile.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1,
+h2,
+h3,
+p,
+.footer-navigation a {
+  color: var(--dark-grayish-blue);
+  text-decoration: none;
+}
+p {
+  font-size: var(--font-size);
+  opacity: 0.8;
+}
+header,
+.clip-4,
+.head-paragraph {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+header,
+.clips {
+  width: 90%;
+  margin: 5rem auto;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  border-radius: 10rem;
+  margin: 1rem 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: var(--weight-bold);
+  transition: 0.15s;
+}
+.btn:hover {
+  opacity: 0.8;
+  scale: 1.03;
+}
+.btn.ios {
+  background-color: var(--strong-cyan);
+  box-shadow: 1px 2px hsl(171, 61%, 37%);
+}
+.btn.mac {
+  background-color: var(--light-blue);
+  box-shadow: 1px 2px hsl(233, 68%, 61%);
+}
+
+/* clips */
+
+.img-clip {
+  /* max-width: 20rem; */
+  width: 90%;
+  margin: 2rem 0;
+}
+
+.clip-heading {
+  margin-top: 10rem;
+}
+
+/* CLIP - 3 */
+.clip-3-tools,
+.clip-3-companies {
+  list-style-type: none;
+  margin-top: 5rem;
+}
+.clip-3-tools li,
+.clip-3-companies li {
+  margin-top: 4rem;
+}
+
+footer {
+  background-color: hsl(202, 22%, 93%);
+}
+
+.footer-logo {
+  max-width: 4rem;
+  max-height: 5rem;
+  margin: 1rem auto;
+}
+
+.footer-navigation ul {
+  list-style-type: none;
+  margin: 0;
+}
+.footer-navigation ul li {
+  margin-top: 1.5rem;
+  min-width: 7rem;
+}
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+.socials {
+  display: inline-flex;
+  align-self: flex-end;
+  margin-left: auto !important;
+  min-width: 10rem;
+  justify-content: space-evenly;
+}
+.socials li {
+  min-width: 2rem !important;
+}
+.socials img:hover {
+  scale: 1.2;
+}
+.attribution {
+  margin-top: 2rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.7rem;
+}
+@media (min-width: 50rem) {
+  body {
+    background-image: url("./images/bg-header-desktop.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /* CLIP - 1 */
+  .clip-1 .content-1 {
+    display: flex;
+    text-align: left;
+  }
+  .content-1 .img-clip {
+    position: relative;
+    left: -7rem;
+  }
+  .content-1 .content-1-text {
+    max-width: 20rem;
+  }
+
+  .content-1 .content-1-heading {
+    margin-top: 4rem;
+  }
+
+  .img-clip {
+    max-width: 45rem;
+  }
+
+  /* CLIP - 3 */
+
+  .clip-3-tools {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5rem;
+    gap: 3rem;
+  }
+  .clip-3-tools li {
+    margin-top: 0;
+  }
+  .clip-3-img {
+    max-width: 5rem;
+    min-height: 3rem;
+    margin: 0 auto;
+  }
+  .clip-3-companies {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-navigation {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .footer-logo {
+    margin: 0 5rem;
+    max-width: 3rem;
+    max-height: 3rem;
+    align-self: center;
+  }
+  .footer-navigation ul {
+    margin-right: 3rem;
+  }
+}
